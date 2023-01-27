@@ -25,7 +25,7 @@ git add <file> - stages a specific file
 
 4 Commit changes - git commit
 
-Commiting
+Committing
 git commit -m "Updating readme" (m = message)
 git reset --soft HEAD~1 (1=1 commit back) (undo the commit - can be done before being pushed to the remote)
 
@@ -43,7 +43,7 @@ eg: git pull origin main
 
 * git useful commands
 
-Intial configurations
+Initial configurations
 git config --global user.name "Your Username"
 git config --global user.email "Your Email address"
 

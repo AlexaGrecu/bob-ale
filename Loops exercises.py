@@ -20,3 +20,26 @@ for i in range(2000,3000):
     if i%4 ==0:
         print (i, "is a leap year")
     else: print(i, "is not a leap year")
+
+#
+#
+#4
+
+random_list = [124, 148, 173, 231, 256, 301, 315, 361, 399]
+
+for i in random_list:
+    if i==315:
+        break
+    if i%7 == 0:
+        continue
+    print (i, end =" ")
+#
+#
+#5
+#
+#
+list = [2, 3, 6, 7, 8, 11, 12, 13, 17, 18]
+
+cubes_list = [x**3 for x in list if x%3 == 0]
+
+print(cubes_list)

@@ -1,3 +1,5 @@
+#For loops
+#
 #1
 my_list = [1, 2, 3, 4, 5, 6]
 cube_list =[]
@@ -43,3 +45,19 @@ list = [2, 3, 6, 7, 8, 11, 12, 13, 17, 18]
 cubes_list = [x**3 for x in list if x%3 == 0]
 
 print(cubes_list)
+#
+#While loops
+#6
+
+capital = ""
+while True:
+    capital=input("Please enter the Capital of Egypt")
+
+    if capital == "quit":
+        print ("The correct capital of Egypt is Cairo")
+        break
+    if capital.upper() == "CAIRO":
+        print("That is the correct answer")
+        break
+    else:
+        print("That is not the correct answer. Try again")

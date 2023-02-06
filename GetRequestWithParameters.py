@@ -13,7 +13,7 @@ print(search_term)
 
 URL = 'https://youtube.com/search'
 PARAMS = {'q':search_term}
-r_get = requests.get(url = URL, params = PARAMS)
+r_get = requests.get(url=URL, params=PARAMS)
 print(r_get.status_code)
 print(r_get.url)
 webbrowser.open(r_get.url)

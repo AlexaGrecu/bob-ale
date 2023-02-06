@@ -22,3 +22,5 @@ print(r_get.is_redirect)
 r_get = requests.get('https://swapi.dev/api/planets/3')
 print(r_get.status_code)
 print(r_get.text)
+
+dir(r_get)

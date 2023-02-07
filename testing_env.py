@@ -20,7 +20,7 @@ r_get = requests.get('https://swapi.dev/api/people/',
 json_data = r_get.json()
 
 # print(type(json_data))
-# pprint(json_data)
+pprint(json_data)
 
 
 my_people_details_list = dict(json_data)['results']
@@ -58,14 +58,3 @@ result_var = f'''There are {len(my_people_with_blue_eyes_list)} people with Blue
 
 print("There are " + str(len(my_people_with_blue_eyes_list)) + " people with Blue eyes.")
 print(result_var)
-
-# print('The characters with blue eyes are:', my_people_with_blue_eyes_list)
-
-
-# using list "my_people_with_blue_eyes_list"
-# print like this:
-#
-# The characters with blue eyes are:
-# Luke Skywalker
-# Owen Lars
-# Beru Whitesun lars

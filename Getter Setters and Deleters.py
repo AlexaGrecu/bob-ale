@@ -14,7 +14,7 @@ class Wrestler:
         print('delete method called')
 
         del self.__name
-    name = property(get_name, set_name, del_name())
+    name = property(get_name, set_name, del_name)
 
 w = Wrestler()
 w.name = 'Kart'

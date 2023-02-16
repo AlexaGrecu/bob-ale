@@ -3,6 +3,10 @@
 
 # clasa people, atribute: name, metode get si if  daca este people intr-un anum film
 
+# define create new object method (instead of creating object using the class itself
+# (def init) use create/define separate class method
+
+
 import requests
 from pprint import pprint
 import json
@@ -24,6 +28,7 @@ class People:
         self.__name = name
 
         return self.__name
+
 
 class Films(People):
 

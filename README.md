@@ -18,16 +18,23 @@ Git Workflow
 3 Add the changes - git add
 
 Staging:
-git add -A - stages all changes
-git add . - stages new and modified files only
-git add -u - stages modified and deleted files only
-git add <file> - stages a specific file
+- git add -A - stages all changes
+- git add . - stages new and modified files only
+- git add -u - stages modified and deleted files only
+- git add <file> - stages a specific file
 
 4 Commit changes - git commit
 
 Committing
-git commit -m "Updating readme" (m = message)
-git reset --soft HEAD~1 (1=1 commit back) (undo the commit - can be done before being pushed to the remote)
+- git commit -m "Updating readme" (m = message)
+- git reset --soft HEAD~1 (1=1 commit back) (undo the commit - can be done before being pushed to the remote)
+- git reset --hard HEAD~5 resets the current branch to the commit just before the last 5 (see man 
+gitrevisions for details about this notation and other cool alternatives like HEAD@{2 days ago}). 
+As it is a hard reset, it will also overwrite every change in the working tree as well. See man git-reset.
+- git merge --squash HEAD@{1} HEAD@{1} is where the branch was just before the previous command 
+(again, see man gitrevisions). This command sets the state of the index to be as it would just after a 
+merge from that commit. This whole operation could be a way to take 5 commits from a branch in which you 
+started a new feature and squash them to a single commit, a meaningful one.
 
 5 Push commits to the remote repo - git push
 
